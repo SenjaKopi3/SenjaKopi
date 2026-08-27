@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja – Ngopi Enak, Nggak Harus Mahal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amberCustom: {
+                            50: '#fdf8f6',
+                            100: '#fbe8e1',
+                            500: '#d97706',
+                            600: '#b45309',
+                            700: '#92400e',
+                            800: '#78350f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fdfbf7] text-[#2c221e] antialiased selection:bg-amber-600 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-[#fdfbf7]/90 backdrop-blur-md border-b border-[#f3e9dc]">
+        <div class="max-w-md mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <span class="text-xl">☕</span>
+                <span class="font-bold tracking-wider text-lg text-[#78350f]">KOPI SENJA</span>
+            </a>
+            <button id="menu-btn" class="p-2 text-[#78350f] focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Container (Mobile Optimized) -->
+    <main class="max-w-md mx-auto px-4 py-6 space-y-8">
+
+        <!-- Hero Section -->
+        <section class="text-center space-y-4 pt-2">
+            <div class="inline-flex items-center space-x-1.5 px-3 py-1 bg-[#fbe8e1] border border-[#f3dacd] rounded-full text-xs font-medium text-[#92400e]">
+                <span>🔥</span>
+                <span>COFFEE SHOP & TEMPAT NONGKRONG FAVORIT</span>
+            </div>
+            
+            <h1 class="text-3xl font-extrabold tracking-tight leading-tight text-[#2c221e]">
+                Ngopi Enak, <br><span class="text-[#b45309]">Nggak Harus Mahal.</span>
+            </h1>
+            
+            <p class="text-sm text-[#5c4a42] px-2 leading-relaxed">
+                Temukan kopi favoritmu dan nikmati suasana yang bikin betah berlama-lama bersama orang tersayang.
+            </p>
+
+            <div class="pt-2 space-y-3">
+                <a href="#menu" class="w-full flex items-center justify-center py-3 px-4 bg-[#b45309] hover:bg-[#92400e] text-white font-semibold rounded-xl shadow-md transition duration-200">
+                    Lihat Menu <span class="ml-1 text-xs">↓</span>
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="w-full flex items-center justify-center py-3 px-4 bg-white border border-[#e6d5c3] hover:bg-[#f7f0e8] text-[#2c221e] font-semibold rounded-xl shadow-sm transition duration-200">
+                    <span class="text-emerald-600 mr-2">💬</span> Pesan Sekarang
+                </a>
+            </div>
+        </section>
+
+        <!-- Hero Image Banner -->
+        <section class="rounded-2xl overflow-hidden shadow-lg border border-[#f3e9dc]">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Suasana Cafe" class="w-full h-52 object-cover">
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="space-y-6 pt-4">
+            <div class="text-center space-y-1">
+                <h2 class="text-2xl font-bold text-[#2c221e]">Menu Favorit Kopi Senja</h2>
+                <p class="text-xs text-[#7c665d]">Pilih menu andalan kami yang siap menemani hari-harimu.</p>
+            </div>
+
+            <!-- Daftar Menu Cards -->
+            <div class="space-y-4">
+
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-[#f3e9dc] space-y-3">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Es Kopi Senja" class="w-full h-40 object-cover rounded-xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-base text-[#2c221e]">Es Kopi Senja</h3>
+                            <p class="text-xs text-[#7c665d] mt-1 leading-relaxed">Perpaduan espresso, fresh milk, dan gula aren pilihan dengan rasa yang pas di lidah.</p>
+                        </div>
+                        <span class="px-2 py-0.5 bg-[#fbe8e1] text-[#92400e] text-[10px] font-bold rounded-md shrink-0">Signature</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-[#f7f0e8]">
+                        <span class="font-bold text-base text-[#b45309]">Rp18.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Es%20Kopi%20Senja" target="_blank" class="px-4 py-1.5 bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold rounded-lg transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-[#f3e9dc] space-y-3">
+                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Caramel Macchiato" class="w-full h-40 object-cover rounded-xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-base text-[#2c221e]">Caramel Macchiato</h3>
+                            <p class="text-xs text-[#7c665d] mt-1 leading-relaxed">Espresso lembut berpadu susu segar dan saus karamel manis yang bikin mood naik lagi.</p>
+                        </div>
+                        <span class="px-2 py-0.5 bg-[#fbe8e1] text-[#92400e] text-[10px] font-bold rounded-md shrink-0">Favorit</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-[#f7f0e8]">
+                        <span class="font-bold text-base text-[#b45309]">Rp22.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Caramel%20Macchiato" target="_blank" class="px-4 py-1.5 bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold rounded-lg transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-[#f3e9dc] space-y-3">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Americano" class="w-full h-40 object-cover rounded-xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-base text-[#2c221e]">Americano</h3>
+                            <p class="text-xs text-[#7c665d] mt-1 leading-relaxed">Kopi hitam murni dengan ekstrak espresso berkualitas tinggi, cocok untuk pecinta kopi sejati.</p>
+                        </div>
+                        <span class="px-2 py-0.5 bg-[#fbe8e1] text-[#92400e] text-[10px] font-bold rounded-md shrink-0">Black Coffee</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-[#f7f0e8]">
+                        <span class="font-bold text-base text-[#b45309]">Rp15.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Americano" target="_blank" class="px-4 py-1.5 bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold rounded-lg transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-[#f3e9dc] space-y-3">
+                    <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte" class="w-full h-40 object-cover rounded-xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-base text-[#2c221e]">Matcha Latte</h3>
+                            <p class="text-xs text-[#7c665d] mt-1 leading-relaxed">Teh hijau matcha premium asli Jepang berpadu dengan susu creamy yang manisnya pas.</p>
+                        </div>
+                        <span class="px-2 py-0.5 bg-[#fbe8e1] text-[#92400e] text-[10px] font-bold rounded-md shrink-0">Non-Coffee</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-[#f7f0e8]">
+                        <span class="font-bold text-base text-[#b45309]">Rp20.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Matcha%20Latte" target="_blank" class="px-4 py-1.5 bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold rounded-lg transition">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl p-4 shadow-sm border border-[#f3e9dc] space-y-3">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Croffle" class="w-full h-40 object-cover rounded-xl">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-bold text-base text-[#2c221e]">Croffle</h3>
+                            <p class="text-xs text-[#7c665d] mt-1 leading-relaxed">Kombinasi croissant dan waffle yang renyah di luar, lembut di dalam dengan taburan gula.</p>
+                        </div>
+                        <span class="px-2 py-0.5 bg-[#fbe8e1] text-[#92400e] text-[10px] font-bold rounded-md shrink-0">Snack / Pastry</span>
+                    </div>
+                    <div class="flex justify-between items-center pt-2 border-t border-[#f7f0e8]">
+                        <span class="font-bold text-base text-[#b45309]">Rp15.000</span>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Croffle" target="_blank" class="px-4 py-1.5 bg-[#b45309] hover:bg-[#92400e] text-white text-xs font-semibold rounded-lg transition">Pesan</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 text-xs text-[#8c7367] border-t border-[#f3e9dc] mt-10">
+            <p>&copy; 2026 Kopi Senja. All rights reserved.</p>
+            <p class="mt-1">Dibuat dengan ❤️ untuk pecinta kopi.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
