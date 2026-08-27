@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio – Web Developer & Creator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0f172a',
+                        cardBg: '#1e293b',
+                        accent: '#38bdf8',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-slate-100 antialiased selection:bg-accent selection:text-darkBg pb-24">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-darkBg/80 backdrop-blur-xl border-b border-slate-800">
+        <div class="max-w-md mx-auto px-5 py-4 flex items-center justify-between">
+            <a href="#" class="font-black text-lg tracking-wider text-white">
+                PORT<span class="text-accent">FOLIO.</span>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="px-3.5 py-1.5 bg-accent/10 border border-accent/30 text-accent text-xs font-bold rounded-full hover:bg-accent hover:text-darkBg transition">
+                Let's Talk 💬
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-md mx-auto px-5 pt-8 space-y-10">
+
+        <!-- Hero Section -->
+        <section class="text-center space-y-4">
+            <div class="w-24 h-24 mx-auto rounded-full bg-gradient-to-tr from-accent to-indigo-600 p-1 shadow-xl">
+                <!-- Ganti link foto profil kamu di bawah ini -->
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Foto Profil" class="w-full h-full object-cover rounded-full">
+            </div>
+            
+            <div class="space-y-1">
+                <span class="text-xs font-bold text-accent uppercase tracking-widest">Frontend Developer</span>
+                <h1 class="text-3xl font-black text-white">Rizky Pratama</h1>
+            </div>
+
+            <p class="text-xs text-slate-400 px-2 leading-relaxed">
+                Membangun website modern, interaktif, dan berstandar profesional untuk membantu bisnis dan brand Anda berkembang di internet.
+            </p>
+
+            <div class="pt-2 flex justify-center space-x-3">
+                <a href="#projects" class="px-5 py-3 bg-accent hover:bg-sky-400 text-darkBg font-bold text-xs rounded-xl shadow-lg transition">
+                    Lihat Karya Saya 🚀
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills / Tech Stack -->
+        <section class="space-y-3">
+            <h2 class="text-xs font-black text-slate-400 uppercase tracking-widest">Keahlian & Tools</h2>
+            <div class="grid grid-cols-3 gap-2.5">
+                <div class="bg-cardBg border border-slate-700/60 p-3 rounded-2xl text-center space-y-1">
+                    <span class="text-xl">🌐</span>
+                    <p class="text-xs font-bold text-slate-200">HTML / CSS</p>
+                </div>
+                <div class="bg-cardBg border border-slate-700/60 p-3 rounded-2xl text-center space-y-1">
+                    <span class="text-xl">⚡</span>
+                    <p class="text-xs font-bold text-slate-200">Tailwind</p>
+                </div>
+                <div class="bg-cardBg border border-slate-700/60 p-3 rounded-2xl text-center space-y-1">
+                    <span class="text-xl">💻</span>
+                    <p class="text-xs font-bold text-slate-200">JavaScript</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (Pameran Karya) -->
+        <section id="projects" class="space-y-4">
+            <h2 class="text-xs font-black text-slate-400 uppercase tracking-widest">Proyek Unggulan</h2>
+
+            <div class="space-y-4">
+                <!-- Project 1: Kopi Senja -->
+                <div class="bg-cardBg rounded-3xl p-4 border border-slate-700/60 space-y-3 shadow-md">
+                    <div class="relative h-40 rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Project Kopi Senja" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-bold text-base text-white">Kopi Senja Landing Page</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Website kedai kopi modern dengan fitur pemesanan WhatsApp otomatis dan desain mobile-first.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-800">
+                        <span class="text-[10px] bg-slate-800 text-accent px-2.5 py-1 rounded-md font-semibold">Tailwind CSS</span>
+                        <a href="#" target="_blank" class="text-xs font-bold text-accent hover:underline">Lihat Demo →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Contoh Tambahan) -->
+                <div class="bg-cardBg rounded-3xl p-4 border border-slate-700/60 space-y-3 shadow-md">
+                    <div class="relative h-40 rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Project Lain" class="w-full h-full object-cover">
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-bold text-base text-white">Makaroni Pedas Store</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Katalog online interaktif untuk produk kuliner lokal dengan integrasi keranjang praktis.</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-800">
+                        <span class="text-[10px] bg-slate-800 text-accent px-2.5 py-1 rounded-md font-semibold">HTML & JS</span>
+                        <a href="#" target="_blank" class="text-xs font-bold text-accent hover:underline">Lihat Demo →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-6 text-xs text-slate-500 border-t border-slate-800 space-y-1">
+            <p class="font-bold text-slate-400">Rizky Pratama</p>
+            <p>&copy; 2026. Built with passion & code.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
