@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Senja – Artisan Coffee & Space</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            50: '#fcfbfa',
+                            100: '#f5f2ee',
+                            200: '#e8e1d9',
+                            300: '#d5c7bc',
+                            400: '#b8a394',
+                            500: '#9e8574',
+                            600: '#846d5e',
+                            700: '#6c584c',
+                            800: '#56463e',
+                            900: '#463a33',
+                            950: '#27201c',
+                        },
+                        gold: {
+                            DEFAULT: '#c5a059',
+                            light: '#dfc07e',
+                            dark: '#9a7b3c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-luxury-50 text-luxury-900 antialiased selection:bg-gold selection:text-white pb-28">
+
+    <!-- Navbar Minimalis Mewah (Classy & Clean) -->
+    <header class="sticky top-0 z-50 bg-luxury-50/90 backdrop-blur-md border-b border-luxury-200/60">
+        <div class="max-w-md mx-auto px-5 py-4 flex items-center justify-between">
+            <a href="#" class="flex flex-col">
+                <span class="text-lg font-serif font-bold tracking-[0.2em] text-luxury-950 uppercase">
+                    Kopi Senja
+                </span>
+                <span class="text-[8px] tracking-[0.3em] text-gold uppercase font-semibold">Artisan & Space</span>
+            </a>
+            
+            <div class="flex items-center space-x-2">
+                <div class="flex items-center space-x-1.5 px-3 py-1 bg-emerald-50 border border-emerald-200/60 rounded-full">
+                    <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                    <span class="text-[9px] font-bold text-emerald-700 tracking-widest uppercase">Open</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-md mx-auto px-5 pt-8 space-y-10">
+
+        <!-- Hero Section Berkelas Internasional -->
+        <section class="text-center space-y-5">
+            <div class="inline-flex items-center space-x-2 px-4 py-1.5 bg-luxury-100/70 border border-luxury-200 rounded-full text-[11px] font-medium text-luxury-700 tracking-wider">
+                <span class="text-gold">✦</span>
+                <span>The Finest Coffee Experience</span>
+            </div>
+            
+            <h1 class="text-4xl font-serif font-normal tracking-tight leading-[1.2] text-luxury-950">
+                Seni Menikmati <br><span class="italic font-light text-gold-dark">Secangkir Kopi.</span>
+            </h1>
+            
+            <p class="text-xs text-luxury-600 px-4 leading-relaxed font-light">
+                Perpaduan biji kopi pilihan berkualitas tinggi dan atmosfer ruang yang tenang untuk menemani setiap momen berharga Anda.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="pt-2 grid grid-cols-2 gap-3">
+                <a href="#menu" class="flex items-center justify-center py-3.5 px-4 bg-luxury-900 hover:bg-luxury-950 text-luxury-50 font-medium text-xs tracking-wider rounded-xl shadow-md transition-all active:scale-95">
+                    Explore Menu
+                </a>
+                <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja,%20saya%20mau%20reservasi" target="_blank" class="flex items-center justify-center py-3.5 px-4 bg-white border border-luxury-300 hover:bg-luxury-100/50 text-luxury-900 font-medium text-xs tracking-wider rounded-xl transition-all shadow-2xs">
+                    Reservasi Meja
+                </a>
+            </div>
+        </section>
+
+        <!-- Hero Banner Image (High-End & Aesthetic) -->
+        <section class="relative w-full aspect-[16/10] rounded-2xl overflow-hidden shadow-xl border border-luxury-200 group">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=85" 
+                 alt="Suasana Cafe Kopi Senja" 
+                 class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/70 via-transparent to-transparent flex flex-col justify-end p-5">
+                <span class="text-gold-light text-[9px] font-semibold uppercase tracking-[0.25em]">Ambience</span>
+                <span class="text-white font-serif text-sm font-light tracking-wide">Cozy Space for Your Daily Ideas</span>
+            </div>
+        </section>
+
+        <!-- Menu Section dengan Filter Kategori -->
+        <section id="menu" class="space-y-6 pt-2">
+            <div class="flex items-end justify-between border-b border-luxury-200/60 pb-3">
+                <div>
+                    <span class="text-[9px] font-bold uppercase tracking-[0.25em] text-gold-dark">Curated Selection</span>
+                    <h2 class="text-2xl font-serif font-normal text-luxury-950">Daftar Menu</h2>
+                </div>
+                <span class="text-[11px] text-luxury-600 italic">Fresh Daily</span>
+            </div>
+
+            <!-- Tombol Filter Kategori (Clean Tabs) -->
+            <div class="flex space-x-2 overflow-x-auto pb-1 scrollbar-none">
+                <button onclick="filterMenu('all')" class="category-btn px-4 py-2 bg-luxury-900 text-luxury-50 text-xs font-medium rounded-lg shadow-2xs shrink-0 transition">Semua</button>
+                <button onclick="filterMenu('coffee')" class="category-btn px-4 py-2 bg-white border border-luxury-200 text-luxury-700 text-xs font-medium rounded-lg shrink-0 hover:bg-luxury-100 transition">Coffee</button>
+                <button onclick="filterMenu('non-coffee')" class="category-btn px-4 py-2 bg-white border border-luxury-200 text-luxury-700 text-xs font-medium rounded-lg shrink-0 hover:bg-luxury-100 transition">Non-Coffee</button>
+                <button onclick="filterMenu('pastry')" class="category-btn px-4 py-2 bg-white border border-luxury-200 text-luxury-700 text-xs font-medium rounded-lg shrink-0 hover:bg-luxury-100 transition">Pastry</button>
+            </div>
+
+            <!-- Katalog Kartu Menu (Luxury Minimalist) -->
+            <div id="menu-container" class="space-y-4 pt-1">
+
+                <!-- Card 1 -->
+                <div class="menu-card bg-white rounded-2xl p-4 shadow-2xs hover:shadow-md border border-luxury-200/80 transition-all duration-300 space-y-3" data-category="coffee">
+                    <div class="relative h-44 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Es Kopi Senja" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-luxury-950/80 backdrop-blur-xs text-gold-light text-[9px] font-bold tracking-widest uppercase rounded-md">Signature</span>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-serif font-bold text-base text-luxury-950">Es Kopi Senja</h3>
+                        <p class="text-xs text-luxury-600 font-light leading-relaxed">Perpaduan espresso pilihan, fresh milk segar, dan gula aren asli dengan racikan rahasia khas Kopi Senja.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2.5 border-t border-luxury-100">
+                        <div>
+                            <span class="text-[9px] text-luxury-400 block uppercase tracking-wider">Harga</span>
+                            <span class="font-serif font-bold text-base text-luxury-900">Rp18.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Es%20Kopi%20Senja%20(Rp18.000)" target="_blank" class="px-4 py-2 bg-luxury-900 hover:bg-luxury-950 text-white text-xs font-medium rounded-lg transition active:scale-95 shadow-2xs">
+                            Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="menu-card bg-white rounded-2xl p-4 shadow-2xs hover:shadow-md border border-luxury-200/80 transition-all duration-300 space-y-3" data-category="coffee">
+                    <div class="relative h-44 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&w=600&q=80" alt="Caramel Macchiato" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-luxury-950/80 backdrop-blur-xs text-gold-light text-[9px] font-bold tracking-widest uppercase rounded-md">Favorit</span>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-serif font-bold text-base text-luxury-950">Caramel Macchiato</h3>
+                        <p class="text-xs text-luxury-600 font-light leading-relaxed">Espresso lembut berpadu susu uap hangat dan siraman saus karamel manis legit di atasnya.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2.5 border-t border-luxury-100">
+                        <div>
+                            <span class="text-[9px] text-luxury-400 block uppercase tracking-wider">Harga</span>
+                            <span class="font-serif font-bold text-base text-luxury-900">Rp22.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Caramel%20Macchiato%20(Rp22.000)" target="_blank" class="px-4 py-2 bg-luxury-900 hover:bg-luxury-950 text-white text-xs font-medium rounded-lg transition active:scale-95 shadow-2xs">
+                            Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="menu-card bg-white rounded-2xl p-4 shadow-2xs hover:shadow-md border border-luxury-200/80 transition-all duration-300 space-y-3" data-category="coffee">
+                    <div class="relative h-44 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Americano" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-luxury-950/80 backdrop-blur-xs text-gold-light text-[9px] font-bold tracking-widest uppercase rounded-md">Black Coffee</span>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-serif font-bold text-base text-luxury-950">Caffè Americano</h3>
+                        <p class="text-xs text-luxury-600 font-light leading-relaxed">Double shot espresso dengan tambahan air panas berkualitas tinggi, menghadirkan aroma kopi murni.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2.5 border-t border-luxury-100">
+                        <div>
+                            <span class="text-[9px] text-luxury-400 block uppercase tracking-wider">Harga</span>
+                            <span class="font-serif font-bold text-base text-luxury-900">Rp15.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Americano%20(Rp15.000)" target="_blank" class="px-4 py-2 bg-luxury-900 hover:bg-luxury-950 text-white text-xs font-medium rounded-lg transition active:scale-95 shadow-2xs">
+                            Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="menu-card bg-white rounded-2xl p-4 shadow-2xs hover:shadow-md border border-luxury-200/80 transition-all duration-300 space-y-3" data-category="non-coffee">
+                    <div class="relative h-44 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" alt="Matcha Latte" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-luxury-950/80 backdrop-blur-xs text-gold-light text-[9px] font-bold tracking-widest uppercase rounded-md">Non-Coffee</span>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-serif font-bold text-base text-luxury-950">Matcha Latte</h3>
+                        <p class="text-xs text-luxury-600 font-light leading-relaxed">Bubuk matcha green tea premium asli Jepang berpadu dengan susu segar creamy yang manisnya pas.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2.5 border-t border-luxury-100">
+                        <div>
+                            <span class="text-[9px] text-luxury-400 block uppercase tracking-wider">Harga</span>
+                            <span class="font-serif font-bold text-base text-luxury-900">Rp20.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Matcha%20Latte%20(Rp20.000)" target="_blank" class="px-4 py-2 bg-luxury-900 hover:bg-luxury-950 text-white text-xs font-medium rounded-lg transition active:scale-95 shadow-2xs">
+                            Pesan
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="menu-card bg-white rounded-2xl p-4 shadow-2xs hover:shadow-md border border-luxury-200/80 transition-all duration-300 space-y-3" data-category="pastry">
+                    <div class="relative h-44 rounded-xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Croffle" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 right-3 px-2.5 py-1 bg-luxury-950/80 backdrop-blur-xs text-gold-light text-[9px] font-bold tracking-widest uppercase rounded-md">Pastry</span>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-serif font-bold text-base text-luxury-950">Butter Croffle</h3>
+                        <p class="text-xs text-luxury-600 font-light leading-relaxed">Kombinasi croissant dan waffle yang renyah di luar, lembut di dalam dengan taburan gula aren karamel.</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-2.5 border-t border-luxury-100">
+                        <div>
+                            <span class="text-[9px] text-luxury-400 block uppercase tracking-wider">Harga</span>
+                            <span class="font-serif font-bold text-base text-luxury-900">Rp15.000</span>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20Croffle%20(Rp15.000)" target="_blank" class="px-4 py-2 bg-luxury-900 hover:bg-luxury-950 text-white text-xs font-medium rounded-lg transition active:scale-95 shadow-2xs">
+                            Pesan
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer Elegan -->
+        <footer class="text-center py-8 text-xs text-luxury-500 border-t border-luxury-200 space-y-1.5 mt-12">
+            <p class="font-serif font-bold text-luxury-900 text-sm tracking-[0.15em] uppercase">Kopi Senja</p>
+            <p class="font-light">Jl. Senja Bahagia No. 88, Kota Wisata</p>
+            <p class="pt-2 text-[10px] text-luxury-400">&copy; 2026 Kopi Senja Artisan. All rights reserved.</p>
+        </footer>
+
+    </main>
+
+    <!-- Floating Bottom Bar (Clean Luxury Style) -->
+    <div class="fixed bottom-4 left-4 right-4 z-40 max-w-md mx-auto">
+        <div class="bg-luxury-950/95 backdrop-blur-md text-luxury-100 p-3.5 rounded-2xl shadow-xl border border-luxury-800 flex items-center justify-between px-5">
+            <div class="flex items-center space-x-2.5">
+                <span class="text-base text-gold">✦</span>
+                <div>
+                    <span class="text-[9px] text-gold-light block font-semibold uppercase tracking-wider">Jam Operasional</span>
+                    <span class="text-xs font-light">Setiap Hari (08.00 - 23.00)</span>
+                </div>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Kopi%20Senja,%20saya%20mau%20tanya-tanya" target="_blank" class="px-4 py-2 bg-gold hover:bg-gold-dark text-white text-xs font-medium rounded-xl transition shadow-xs flex items-center space-x-1">
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Script Filter Menu -->
+    <script>
+        function filterMenu(category) {
+            const cards = document.querySelectorAll('.menu-card');
+            const buttons = document.querySelectorAll('.category-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-luxury-900', 'text-luxury-50');
+                btn.classList.add('bg-white', 'border', 'border-luxury-200', 'text-luxury-700');
+            });
+            event.currentTarget.classList.remove('bg-white', 'border', 'border-luxury-200', 'text-luxury-700');
+            event.currentTarget.classList.add('bg-luxury-900', 'text-luxury-50');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+  </html>
